@@ -5,13 +5,8 @@ let H = window.innerHeight;
 let ASPECT_RATIO = 1 / 1;
 let DIM;
 let MULTIPLIER;
-let isRenderer = window.alba.params.isRenderer;
 
 let traits = window.alba.getMetadata();
-
-// Seed the PRNG with the input seed and use it with p5's random functions.
-let seed = window.alba.params.seed;
-const prng = window.alba.prng(seed);
 
 const sketch = (p) => {
 	p.randomSeed(prng() * 1e15);
